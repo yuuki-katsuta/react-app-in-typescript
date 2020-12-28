@@ -1,5 +1,6 @@
 import React from 'react';
 import Counter from './Counter';
+import CounterWithReducer from './CounterWithReducer';
 //Functionコンポーネントはを使う場合、必ず関数に対してアノテーションをしてジェネリクス型でpropsの型を指定する
 
 interface AppProps {
@@ -12,6 +13,7 @@ const App: React.FunctionComponent<AppProps> = ({ message }) => {
   return (
     <div>
       <Counter />
+      <CounterWithReducer />
     </div>
   );
 };
